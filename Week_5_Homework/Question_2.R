@@ -30,6 +30,7 @@ for (i in IDlist){
   # store the data in lgtdata
   # warning c(), using list(), to prevent decompose the elements
 }
+lgtdata
 mcmc <- list(R=20000,keep=1)
 Z = matrix(rep(0,946))
 out = rhierMnlRwMixture(Data = list(p =2,lgtdata = lgtdata, Z = Z), Prior = list(ncomp = 9), Mcmc = mcmc)
